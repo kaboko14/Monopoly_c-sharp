@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UserDataTable" msprop:Generator_TableClassName="UserDataTableDataTable" msprop:Generator_TableVarName="tableUserDataTable" msprop:Generator_TablePropName="UserDataTable" msprop:Generator_RowDeletingName="UserDataTableRowDeleting" msprop:Generator_RowChangingName="UserDataTableRowChanging" msprop:Generator_RowEvHandlerName="UserDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="UserDataTableRowDeleted" msprop:Generator_UserTableName="UserDataTable" msprop:Generator_RowChangedName="UserDataTableRowChanged" msprop:Generator_RowEvArgName="UserDataTableRowChangeEvent" msprop:Generator_RowClassName="UserDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="money" msprop:Generator_ColumnVarNameInTable="columnmoney" msprop:Generator_ColumnPropNameInRow="money" msprop:Generator_ColumnPropNameInTable="moneyColumn" msprop:Generator_UserColumnName="money" type="xs:int" minOccurs="0" />
+              <xs:element name="userId" msprop:Generator_ColumnVarNameInTable="columnuserId" msprop:Generator_ColumnPropNameInRow="userId" msprop:Generator_ColumnPropNameInTable="userIdColumn" msprop:Generator_UserColumnName="userId" type="xs:string" minOccurs="0" />
+              <xs:element name="position" msprop:Generator_ColumnVarNameInTable="columnposition" msprop:Generator_ColumnPropNameInRow="position" msprop:Generator_ColumnPropNameInTable="positionColumn" msprop:Generator_UserColumnName="position" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AssetDataTable" msprop:Generator_TableClassName="AssetDataTableDataTable" msprop:Generator_TableVarName="tableAssetDataTable" msprop:Generator_TablePropName="AssetDataTable" msprop:Generator_RowDeletingName="AssetDataTableRowDeleting" msprop:Generator_RowChangingName="AssetDataTableRowChanging" msprop:Generator_RowEvHandlerName="AssetDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="AssetDataTableRowDeleted" msprop:Generator_UserTableName="AssetDataTable" msprop:Generator_RowChangedName="AssetDataTableRowChanged" msprop:Generator_RowEvArgName="AssetDataTableRowChangeEvent" msprop:Generator_RowClassName="AssetDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:string" minOccurs="0" />
+              <xs:element name="assetId" msprop:Generator_ColumnVarNameInTable="columnassetId" msprop:Generator_ColumnPropNameInRow="assetId" msprop:Generator_ColumnPropNameInTable="assetIdColumn" msprop:Generator_UserColumnName="assetId" type="xs:string" minOccurs="0" />
+              <xs:element name="ownerUserId" msprop:Generator_ColumnVarNameInTable="columnownerUserId" msprop:Generator_ColumnPropNameInRow="ownerUserId" msprop:Generator_ColumnPropNameInTable="ownerUserIdColumn" msprop:Generator_UserColumnName="ownerUserId" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="UserDataTable_AssetDataTable" msdata:parent="UserDataTable" msdata:child="AssetDataTable" msdata:parentkey="userId" msdata:childkey="ownerUserId" msprop:Generator_UserChildTable="AssetDataTable" msprop:Generator_ChildPropName="GetAssetDataTableRows" msprop:Generator_UserRelationName="UserDataTable_AssetDataTable" msprop:Generator_ParentPropName="UserDataTableRow" msprop:Generator_RelationVarName="relationUserDataTable_AssetDataTable" msprop:Generator_UserParentTable="UserDataTable" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
